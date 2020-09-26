@@ -1,0 +1,16 @@
+QtProject
+SciDAVis
+coc
+configstore
+filezilla
+fish/completions/
+fish/conf.d/
+fish/functions/
+fish/tide_theme/
+gh/
+htop/
+kitty/
+neofetch/
+nvim/
+yarn/
+zathura/
