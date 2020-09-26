@@ -1,0 +1,68 @@
+# Colors (Challenger Deep)
+colors:
+  # Default colors
+  primary:
+    # hard contrast: background = '#1d2021'
+    background: '#2c323b'
+    # soft contrast: background = '#32302f'
+    foreground: '#eaeaea'
+
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#d54e53'
+    green: '#98c379'
+    yellow: '#e5c07b'
+    blue: '#83a598'
+    magenta: '#c678dd'
+    cyan: '#70c0ba'
+    white: '#ffffff'
+
+  # Bright colors
+  bright:
+    black: '#666666'
+    red: '#ec3e45'
+    green: '#90c966'
+    yellow: '#edbf69'
+    blue: '#2bcec2'
+    magenta: '#c858e9'
+    cyan: '#8ec07c'
+    white: '#ffffff'
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrainsMonoExtraBold Nerd Font
+    style: Extra Bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  size: 16
+  offset:
+    y: 0
+  glyph_offset:
+    y: 0
+  use_thin_strokes: true
+  draw_bold_text_with_bright_colors: true
+
+key_bindings:
+  - {
+      key: N,
+      mods: Command,
+      command:
+        {
+          program: "open",
+          args: [ "-n", "/Applications/Alacritty.app" ]
+        }
+    }
+  - {
+        key: "V",
+        mods: Alt,
+        chars: "\x1bv"
+  }
+
+background_opacity: 0.7
+
+window:
+  decorations: buttonless

@@ -1,0 +1,10 @@
+set --export LC_CTYPE en_US.UTF-8
+set --export LC_ALL en_US.UTF-8
+
+alias vim "/usr/local/bin/nvim"
+alias ls "colorls --gs --sort-dirs"
+alias lc "colorls --tree=2 -t"
+
+set --export FZF_DEFAULT_OPTS --height 80% --reverse --border
+set --export FZF_DEFAULT_COMMAND 'rg --files'
+set --export LAMMPS_POTENTIALS '/usr/local/share/lammps/potentials'

@@ -1,0 +1,42 @@
+{
+  "title": "Change left_control/s to Enter/N",
+  "rules": [
+    {
+      "description": "Change left_control/s to Enter/N",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        },
+	{
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

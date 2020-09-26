@@ -1,0 +1,12 @@
+add_newline = true
+[python]
+disabled = true
+[character]
+symbol = "❯"
+error_symbol = "✗" vicmd_symbol = "❮" use_symbol_for_status = true 
+[time]
+disabled = false
+format = "🕙%T"
+
+[line_break]
+disabled = true
