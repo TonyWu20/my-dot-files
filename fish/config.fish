@@ -1,5 +1,7 @@
 set --export LC_CTYPE en_US.UTF-8
 set --export LC_ALL en_US.UTF-8
+set --export LANG en_US.UTF-8
+set --export OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
 
 alias vim "/usr/local/bin/nvim"
 alias ls "colorls --gs --sort-dirs"
@@ -27,4 +29,12 @@ end
 
 function remotedesktop
 	brew services stop yabai && open "$HOME/Applications/Chrome Apps.localized/Chrome Remote Desktop.app" && brew services start yabai && sleep 3 && yabai -m window --space next && yabai -m space --focus next
+end
+
+function ris2bib
+	set name (echo $argv|rg --pcre2 '\S+(?=.ris)' -o |sed 's#\\n##g')
+	ris2xml $name.ris | xml2bib > $name\_temp.bib -b
+	cat $name\_temp.bib |sed -e "/month.*/d" -e "/day.*/d" |sed -E "s/(@Article{[a-zA-Z]+)([0-9])/\1:\2/" > $name.bib
+	rm $name\_temp.bib
+	set -e name
 end

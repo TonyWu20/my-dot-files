@@ -8,7 +8,7 @@ vicmd_symbol = "❮"
 use_symbol_for_status = true 
 [time]
 disabled = false
-format = '🕙[\[ $time \]]($style)'
+format = '🕙[$time]($style)'
 time_format = "%T"
 
 [line_break]
