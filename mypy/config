@@ -13,3 +13,11 @@ ignore_missing_imports = True
 ignore_missing_imports = True
 [mypy-ovito]
 ignore_missing_imports = True
+[mypy-p_tqdm.*]
+ignore_missing_imports = True
+[mypy-mendeleev.*]
+ignore_missing_imports = True
+[mypy-ase.*]
+ignore_missing_imports = True
+[mypy-ase]
+ignore_missing_imports = True
